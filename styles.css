@@ -32,6 +32,7 @@ ul, ol {
     margin-bottom: 0;
     padding-left: 0;
 }
+
 img {
     display: block;
     max-width: 100%;
@@ -43,8 +44,6 @@ address {
 
 .container {
     width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -52,7 +51,7 @@ address {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 32px 0;
+    padding: 32px 15px;
 }
 button {
     cursor: pointer;
@@ -136,10 +135,11 @@ section {
     margin-left: 50px;
 }
 .hero {
-    min-width: 1600px;
     height: 600px;
     background-color: var(--bg-color);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-title {
     color: var(--white-color);
@@ -149,7 +149,6 @@ section {
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-align: center;
-    padding-top: 200px;
     padding-bottom: 30px;
 }
 .hero-button {
@@ -177,9 +176,14 @@ section {
 }
 .features {
     padding-top: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 .features ul {
     display: flex;
+}
+.features-list {
+    width: 270px;
 }
 .features-list:not(:last-child) {
     margin-right: 30px;
@@ -231,13 +235,16 @@ section {
 .team-list li:not(:last-child) {
     margin-right: 30px;
 }
+.team-description {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
-    margin-top: 30px;
     margin-bottom: 10px;
 }
 .position {
@@ -247,7 +254,6 @@ section {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--grey-color);
-    margin-bottom: 30px;
 }
 footer {
     height: 252px;
@@ -257,37 +263,34 @@ footer .studio,
 footer .address {
     color: var(--white-color);
 }
-footer .container {
+.footer {
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 .footer-address {
     margin-top: 20px;
 }
-address .address {
+.footer-address a {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--white-color);
-}
-address a {
-    font-family: 'Roboto', sans-serif;    
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+
 address .mail {
     display: block;
     margin-top: 9px;
-    margin-bottom: 9px;
+    margin-bottom: 6px;
 }
 .portfolio-header {
-    margin-bottom: 94px;
+    border-bottom: 1px solid #ECECEC;
+}
+.menu {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .menu-list {
     display: flex;
@@ -330,9 +333,7 @@ address .mail {
 .gallery-list:nth-child(3n) {
     margin-right: 0;
 }
-.gallery-list:nth-last-child(-n+3) {
-    margin-bottom: 94px;
-}
+
 .gallery-list img {
     width: 370px;
 }
